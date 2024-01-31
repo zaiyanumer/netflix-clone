@@ -1,0 +1,121 @@
+@media screen and (max-width: 1200px) {
+	.section {
+		padding: 4% 3%;
+	}
+	section.download {
+		padding: 0;
+	}
+	.download-text {
+		padding-right: 4%;
+	}
+	section.kids {
+		padding: 3% 0;
+	}
+	.faq-item {
+		width: 95%;
+	}
+	footer {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	nav {
+		width: 100vw;
+		left: 0;
+		padding: 0 24px 0 16px;
+	}
+	nav .logo img {
+		width: 100px;
+		height: 60px;
+	}
+	h1 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 18px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	.banner-text {
+		line-height: 35px;
+		top: 197px;
+	}
+	section.banner {
+		height: 500px;
+	}
+	.section {
+		padding: 7% 15%;
+		flex-direction: column;
+	}
+	.tv-text > * {
+		text-align: center;
+	}
+	.tv-text {
+		margin: 5% 0;
+	}
+	.download-text {
+		text-align: center;
+		padding: 4% 0 0;
+	}
+	section.kids {
+		padding: 3% 10%;
+	}
+	section.download,
+	section.kids {
+		flex-direction: column-reverse;
+	}
+	section.kids img {
+		width: 100%;
+	}
+	.kids-text > * {
+		text-align: center;
+	}
+	.faq-item {
+		font-size: 18px;
+		padding: 24px;
+	}
+	.faq-item i {
+		font-size: 28px;
+	}
+	footer ul {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.banner-text {
+		top: 130px;
+		padding: 0 8px;
+	}
+	.email-box {
+		flex-direction: column;
+		gap: 6px;
+	}
+	.email-box input {
+		padding: 12px 15px;
+		width: calc(100% - 48px);
+		margin: 0 48px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	.section {
+		padding: 0;
+	}
+	section.banner {
+		width: 100%;
+		height: 500px;
+		background-position: center;
+	}
+	.download-img {
+		transform: scale(0.8);
+	}
+}
+
+@media screen and (max-width: 300px) {
+	section.banner {
+		height: 600px;
+	}
+}

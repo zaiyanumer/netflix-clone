@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+:root {
+	--main-color: #e50914;
+	--bg-black: #000000;
+	--text-color: #ffffff;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: "Poppins", sans-serif;
+	color: var(--text-color);
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+}
+
+/* Navbar */
+nav {
+	width: 80vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 10vw;
+	z-index: 100;
+}
+nav .logo img {
+	width: 180px;
+	height: 100px;
+}
+nav .sign-in button {
+	background-color: var(--main-color);
+	padding: 4px 16px;
+	border-radius: 4px;
+	border: none;
+	font-weight: 500;
+	font-size: 14px;
+	cursor: pointer;
+}
+nav .sign-in button:hover {
+	background-color: #c11119;
+}
+
+/* Banner */
+section.banner {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 1) 100%),
+		url("assets/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right bottom;
+	height: 700px;
+	position: relative;
+	top: 0;
+}
+hr {
+	background-color: #232323;
+	height: 10px;
+	border: 0;
+}
+.banner-text {
+	position: relative;
+	top: 275px;
+	text-align: center;
+}
+.banner-heading {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+h1 {
+	font-size: 48px;
+	font-weight: 700;
+}
+h2 {
+	font-size: 24px;
+	font-weight: 400;
+}
+h3 {
+	font-size: 20px;
+	font-weight: 400;
+}
+.email-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	margin-top: 10px;
+}
+.email-box input {
+	padding: 12px 15px;
+	width: 336px;
+	height: 50px;
+	font-size: 16px;
+	border: 1px solid gray;
+	border-radius: 4px;
+	background: rgba(17, 21, 24, 0.65);
+	color: var(--text-color);
+}
+.email-box input::placeholder {
+	color: rgb(151, 151, 151);
+}
+.email-box button {
+	background-color: var(--main-color);
+	padding: 12px 24px;
+	border-radius: 4px;
+	border: none;
+	font-weight: 500;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+/* Tv Section */
+.section {
+	background-color: var(--bg-black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 7%;
+	padding: 7% 10%;
+}
+.tv-text {
+	padding-right: 25px;
+}
+.tv h1 {
+	margin-bottom: 1rem;
+}
+.tv-video video {
+	border: 4px solid #4d4d4d;
+	border-radius: 2px;
+	width: 100%;
+}
+
+/* Download Section  */
+section.download {
+	padding: 4% 10% 0;
+	gap: 0;
+	overflow: hidden;
+}
+.download-stranger {
+	display: flex;
+	background-color: var(--bg-black);
+	border: 2px solid #4d4d4d;
+	border-radius: 12px;
+	align-items: center;
+	width: 55%;
+	margin: auto;
+	justify-content: space-between;
+	padding: 4px 8px;
+	position: relative;
+	top: -140px;
+	left: 0;
+}
+.download-stranger .stranger-things-img img {
+	width: 60px;
+}
+.download-stranger .download-gif {
+	text-align: right;
+}
+.download-stranger .download-gif img {
+	width: 50%;
+}
+.text {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1.1rem;
+}
+.text .blue {
+	color: #0071eb;
+	font-size: 13px;
+}
+
+/* Kids Section  */
+section.kids {
+	padding: 3% 10%;
+}
+section.kids img{
+	width: 50vw;
+}
+
+/* FAQ Section  */
+ section.faq {
+	padding: 3%;
+}
+
+section.faq h1 {
+	text-align: center;
+}
+
+.faq-item{
+	background-color: #2d2d2d;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 24px;
+	padding: 27px 24px;
+	width: 80%;
+	margin: 9px auto;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+.faq-item:hover{
+	background-color: #4a4a4a;
+}
+.faq-item i{
+	font-size: 38px;
+	font-weight: 400;
+}
+.faq > p{
+	font-size: 18px;
+	text-align: center;
+	padding: 25px 10px 0;
+}
+
+/* Footer */
+footer{
+	width: 75vw;
+	margin: 8vh auto;
+}
+footer ul{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 18px;
+}
+ul li, footer div:first-child, .netflix {
+	font-size: 14px;
+	text-decoration: underline;
+	cursor: pointer;
+	color: white;
+	opacity: 0.7;
+}
+footer > *{
+	margin-bottom: 18px;
+}
+.language button {
+	font-size: 16px;
+ background-color: #0F0F0F;
+ padding: 2px 12px;
+ width: 126px;
+ border-radius: 4px;
+ border: 1px solid gray;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.language button i:nth-child(2) {
+	font-size: 12px;
+}
+.netflix{
+	text-decoration: none;
+}
